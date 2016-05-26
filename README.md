@@ -2,8 +2,21 @@
 
 This is a seed project to quickly start a project in Ecmascript 6 using visual studio code as IDE. 
 
-#Steps
-Clone repo with git
+#Pre-Requisites
+Git client
 <br />
-Open the local folder with Visual Studo Code
+Gulp
+<br />
+Node / Npm
+<br />
+Visual Studio Code
+
+#Steps
+Clone or download master branch
+<br />
+Open folder in Visual Studio Code
+<br />
+Ctrl + Shift + P and type 'npm install' (Visual Studio Code)
+<br />
+Ctrl + Shift + B (Visual Studio Code)
 
