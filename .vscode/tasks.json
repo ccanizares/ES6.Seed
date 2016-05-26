@@ -6,36 +6,35 @@
 // ${fileExtname}: the current opened file's extension
 // ${cwd}: the current working directory of the spawned process
 
-// A task runner that calls the Typescript compiler (tsc) and
-// Compiles a HelloWorld.ts program
-{
-	"version": "0.1.0",
+// Uses babel, webpack to build and run webpack-server
+// {
+// 	"version": "0.1.0",
 
-	"command": "${workspaceRoot}/node_modules/.bin/webpack-dev-server",
+// 	"command": "${workspaceRoot}/node_modules/.bin/webpack-dev-server",
 
-	// The command is a shell script
-	"isShellCommand": true,
+// 	// The command is a shell script
+// 	"isShellCommand": true,
 
-	// Show the output window only if unrecognized errors occur.
-	"showOutput": "always",
-
-	// args is the HelloWorld program to compile.
-	"args": [
-        "--progress", 
-        "--colors"
-    ], 
-    "echoCommand": true,
-	"tasks": [
-		{
-			"args": [
-				"" 
-			],
-			"suppressTaskName": true,
-			"taskName": "webpack dev",
-			"isBuildCommand": true
-		}
-    ]
-}
+// 	// Show the output window only if unrecognized errors occur.
+// 	"showOutput": "always",
+    
+// 	// args is the HelloWorld program to compile.
+// 	"args": [
+//         "--progress", 
+//         "--colors"
+//     ], 
+//     "echoCommand": true,
+// 	"tasks": [
+// 		{
+// 			"args": [
+// 				"" 
+// 			],
+// 			"suppressTaskName": true,
+// 			"taskName": "webpack dev",
+// 			"isBuildCommand": true
+// 		}
+//     ]
+// }
 
 
 // A task runner that calls the Typescript compiler (tsc) and
@@ -63,26 +62,22 @@
 }
 */
 
-// A task runner configuration for gulp. Gulp provides a less task
-// which compiles less to css.
-/*
+// A task runner configuration for gulp. Glup provides at this moment a build task that uses webpack, babel
+// runs WebPack-devserver
 {
 	"version": "0.1.0",
 	"command": "gulp",
 	"isShellCommand": true,
 	"tasks": [
 		{
-			"taskName": "less",
-			// Make this the default build command.
+			"taskName": "build",
 			"isBuildCommand": true,
-			// Show the output window only if unrecognized errors occur.
-			"showOutput": "silent",
-			// Use the standard less compilation problem matcher.
-			"problemMatcher": "$lessCompile"
+			"showOutput": "silent"
+			//"problemMatcher": "$lessCompile", 
 		}
 	]
 }
-*/
+
 
 // Uncomment the following section to use jake to build a workspace
 // cloned from https://github.com/Microsoft/TypeScript.git
