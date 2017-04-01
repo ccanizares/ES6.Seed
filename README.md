@@ -2,7 +2,7 @@
 
 This is a seed project to quickly start a project in Ecmascript 6 using visual studio code as IDE. 
 
-#Pre-Requisites
+# Pre-Requisites
 Git client
 <br />
 Gulp
@@ -11,7 +11,7 @@ Node / Npm
 <br />
 Visual Studio Code
 
-#Steps
+# Steps
 Clone or download master branch
 <br />
 Open folder in Visual Studio Code
